@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css\style.css" >
+</head>
+<body>
+  <div class="todo-container">
+    <h1>ToDo List - Clea's</h1>
+    <div class="form-group">
+      <input type="text" id="todo-input" placeholder="Add a todo..." />
+      <input type="date" id="date-input" />
+      <select id="status-input">
+        <option value="Not Yet">Not Yet</option>
+        <option value="On Progress">On Progress</option>
+        <option value="Done">Done</option>
+      </select>
+      <select id="action-input">
+        <option value="Priority">Priority</option>
+        <option value="Least Priority">Least Priority</option>
+      </select>
+      <button id="add-btn">+</button>
+    </div>
+    <div class="controls">
+      <button id="filter-status">FILTER BY STATUS</button>
+      <button id="filter-action">FILTER BY ACTION</button>
+      <button id="delete-all-btn">DELETE ALL</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>TASK</th>
+          <th>DUE DATE</th>
+          <th>STATUS</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js\script.js"></script>
+</body>
+</html>

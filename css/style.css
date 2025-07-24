@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffcbfd;
+  font-family: 'Segoe UI', sans-serif;
+  color: #faffb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background-color: #313b93;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #0008;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group input,
+.form-group select,
+.form-group button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#add-btn {
+  background-color: #6a5acd;
+  color: white;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: #ce7575;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #161a2b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #22253b;
+}
+
+thead th {
+  padding: 0.75rem;
+  text-align: left;
+  color: #cfd1f2;
+}
+
+tbody td {
+  padding: 0.75rem;
+  border-top: 1px solid #333;
+  color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1f2238;
+}
+
+tbody tr:hover {
+  background-color: #2a2d47;
+}
